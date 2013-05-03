@@ -21,7 +21,7 @@
 
 Добавить строку в Gemfile:
 
-    gem 'russpeeddev'
+    gem 'russpeeddev', git: 'https://github.com/vasche/russpeeddev.git'
 
 Затем выполнить:
 
