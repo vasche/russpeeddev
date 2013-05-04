@@ -1,8 +1,8 @@
 # Russpeeddev
 
-Генерирует куски кода для быстрого старта разработки нового приложения.
+Генерирует куски кода для быстрого старта разработки нового приложения (russian edition).
 
-Для rails 4.0.0.rc1.
+При создании использовался rails 4.0.0.rc1.
 
 ## Что это такое?
 
@@ -12,8 +12,10 @@
 * Генерируется контроллер pages для статических страниц index about contact
 * Добавляется текст в routes.rb
 * Добавляется хелпер метод title
-* Меняется шаблон application
+* Меняется шаблон application в layouts
 * Добавляются куски шаблонов в views/shared
+* Создается файл custom.css.scss, в котором импортируется twitter bootstrap.
+* Последней строкой подключается custom в application.css
 * TODO: Поменять часовой пояс и локаль в application.rb
 
 
@@ -21,7 +23,7 @@
 
 Добавить строку в Gemfile:
 
-    gem 'russpeeddev', git: 'https://github.com/vasche/russpeeddev.git'
+    gem 'russpeeddev'
 
 Затем выполнить:
 
