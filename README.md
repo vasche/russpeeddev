@@ -18,6 +18,24 @@
 * Последней строкой подключается custom в application.css
 * TODO: Поменять часовой пояс и локаль в application.rb
 
+### Список гемов
+* gem 'russian'
+* gem 'slim', '~> 1.3.8'
+* gem 'slim-rails', '~> 1.1.1'
+* gem 'tilt', '~> 1.3.7'
+* gem 'kaminari'
+* gem 'bootstrap-sass'
+
+#### группа тест:
+
+* gem 'rspec-rails'
+* gem 'webrat'
+* gem 'factory_girl_rails'
+
+##### группа девелопмент:
+
+* gem 'rspec-rails'
+* gem 'quiet_assets'
 
 ## Установка
 
