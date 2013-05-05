@@ -2,11 +2,12 @@
 ## v0.0.4
 
 * Add custom.css.scss template
-* add some custom css code
+* Add some custom css code
+* Application layout changed
 
 ## v0.0.3
 
-* wrap configs
+* Wrap configs
 
 ## v0.0.2
 
