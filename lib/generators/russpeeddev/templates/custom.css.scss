@@ -1,7 +1,21 @@
-@import "bootstrap"
-@import "bootstrap-responsive"
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+html, body {
+  height: 100%;
+}
 
 /*header nav*/
 .nav {
   background-color: #5191b4;
+}
+.wrap{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+footer{
+  background-color: #9eaeb3;
+  height: 60px;
 }

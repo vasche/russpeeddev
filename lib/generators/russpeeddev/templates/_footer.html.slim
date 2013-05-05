@@ -1,7 +1,3 @@
-footer
+.container
   .copyright
-    p Адрес:
-    p &copy; Company #{Time.now.year}
-    p =mail_to 'info@changedomainhere.ru'
-  .info
-    p =link_to '#', 'http://twitter.github.io/bootstrap'
+    |&copy; Company #{Time.now.year} #{mail_to 'info@changedomainhere.ru'} | #{link_to 'bootstrap', 'http://twitter.github.io/bootstrap'}
