@@ -39,6 +39,15 @@
 * gem 'rspec-rails'
 * gem 'quiet_assets'
 
+#### гемы в комментариях:
+gem 'thinking-sphinx'
+gem 'delayed_job_active_record'
+gem 'devise'
+gem 'devise-russian', '~> 2.0.1.1'
+gem 'activeadmin'
+gem 'meta_search', '>= 1.1.0.pre'
+
+
 ## Установка
 
 Добавить строку в Gemfile:
@@ -61,7 +70,7 @@
 
 ## Баги rails 4.0.0.rc1
 
-Есть проблема с зависимостями slim-rails, slim и  tilt 1.4.0. Решается запуском bundle update и повторной генерации russpeeddev
+Есть проблема с зависимостями slim-rails, slim и  tilt 1.4.0. Решается запуском bundle update и повторной генерацией russpeeddev
 
 
 ## Contributing
