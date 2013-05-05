@@ -40,12 +40,12 @@
 * gem 'quiet_assets'
 
 #### гемы в комментариях:
-gem 'thinking-sphinx'
-gem 'delayed_job_active_record'
-gem 'devise'
-gem 'devise-russian', '~> 2.0.1.1'
-gem 'activeadmin'
-gem 'meta_search', '>= 1.1.0.pre'
+* gem 'thinking-sphinx'
+* gem 'delayed_job_active_record'
+* gem 'devise'
+* gem 'devise-russian', '~> 2.0.1.1'
+* gem 'activeadmin'
+* gem 'meta_search', '>= 1.1.0.pre'
 
 
 ## Установка
