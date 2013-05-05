@@ -1,3 +1,9 @@
+
+## v0.0.4
+
+* Add custom.css.scss template
+* add some custom css code
+
 ## v0.0.3
 
 * wrap configs

@@ -65,9 +65,7 @@ end
       end
 
       def create_custom_css_scss
-        create_file "app/assets/stylesheets/custom.css.scss" do
-          "@import 'bootstrap';\n@import 'bootstrap-responsive';"
-        end
+        template "custom.css.scss", "app/assets/stylesheets/custom.css.scss"
         insert_into_file "app/assets/stylesheets/application.css" , before: "*/" do
           "*= require custom\n"
         end
