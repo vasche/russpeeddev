@@ -1,3 +1,7 @@
+## v0.0.3
+
+* wrap configs
+
 ## v0.0.2
 
 * add configs to config/application.rb

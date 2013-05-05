@@ -88,10 +88,10 @@ end
 
       def edit_application_rb
         insert_into_file "config/application.rb" , after: "# config.i18n.default_locale = :de" do
-          "config.i18n.default_locale = :ru\n"
+          "\n    config.i18n.default_locale = :ru\n"
         end
         insert_into_file "config/application.rb" , after: "# config.time_zone = 'Central Time (US & Canada)'" do
-          "    config.time_zone = 'Moscow'\n    config.active_record.default_timezone = :local\n"
+          "\n    config.time_zone = 'Moscow'\n    config.active_record.default_timezone = :local\n"
         end
       end
 
