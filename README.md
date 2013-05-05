@@ -16,7 +16,9 @@
 * Добавляются куски шаблонов в views/shared
 * Создается файл custom.css.scss, в котором импортируется twitter bootstrap.
 * Последней строкой подключается custom в application.css
-* TODO: Поменять часовой пояс и локаль в application.rb
+* config.time_zone = 'Moscow'
+* config.active_record.default_timezone = :local
+* config.i18n.default_locale = :ru
 
 ### Список гемов
 * gem 'russian'
