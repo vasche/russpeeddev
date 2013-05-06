@@ -5,6 +5,10 @@
 * Add some custom css code
 * Application layout changed
 
+## v0.0.3.1
+
+* No comment
+
 ## v0.0.3
 
 * Wrap configs

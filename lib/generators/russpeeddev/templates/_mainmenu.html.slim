@@ -1,6 +1,13 @@
-nav*{class:'top-menu-navigation'}
-  ul class="nav nav-pills"
-    li.main-link =link_to "Главная", root_url
-    li.main-link =link_to "О нас", about_url
-    li.main-link =link_to "Контакты", contact_url
-
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      button.btn.btn-navbar type="button" data-toggle="collapse" data-target=".nav-collapse"
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      =link_to "RusSpeedDev", root_url, class: 'brand'
+      .nav-collapse.collapse
+        ul.nav
+          li.main-link =link_to "Главная", root_url
+          li.main-link =link_to "О нас", about_url
+          li.main-link =link_to "Контакты", contact_url
