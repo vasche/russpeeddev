@@ -85,7 +85,7 @@ end
       end
 
       def remove_old_version_files
-        remove_file 'app/views/shared/_outdate.html.slim'
+        remove_file 'app/views/shared/_outdate.html'
       end
 
       def edit_application_rb
