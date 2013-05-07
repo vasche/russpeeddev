@@ -19,6 +19,7 @@
 * config.time_zone = 'Moscow'
 * config.active_record.default_timezone = :local
 * config.i18n.default_locale = :ru
+* Используется шаблон Sticky footer with fixed navbar (http://twitter.github.io/bootstrap/examples/sticky-footer-navbar.html)
 
 ### Список гемов
 * gem 'russian'

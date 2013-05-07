@@ -84,6 +84,10 @@ end
         template "application.html.slim", "app/views/layouts/application.html.slim"
       end
 
+      def remove_old_version_files
+        remove_file 'app/views/shared/_outdate.html.slim'
+      end
+
       def edit_application_rb
         insert_into_file "config/application.rb" , after: "# config.i18n.default_locale = :de" do
           "\n    config.i18n.default_locale = :ru\n"
