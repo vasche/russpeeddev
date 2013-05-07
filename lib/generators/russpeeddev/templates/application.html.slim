@@ -8,14 +8,14 @@ html
     = render 'shared/meta'
 
   body *{class: controller.controller_name}
-    .wrap
+    =render 'shared/outdate'
+    #wrap
+      header
+        = render 'shared/mainmenu'
       .container
-        =render 'shared/outdate'
-        header
-          = render 'shared/mainmenu'
-        .content
-          = yield
-    footer
+        = yield
+      #push
+    footer#footer
       =render 'shared/footer'
     /!javascript include here
     =javascript_include_tag "application"

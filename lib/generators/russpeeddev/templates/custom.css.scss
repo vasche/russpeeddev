@@ -1,10 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-/*header nav*/
-nav {
-  background-color: #98bed3;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -41,4 +37,8 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+#wrap > .container {
+  padding-top: 60px;
 }

@@ -77,7 +77,7 @@ end
         template "_mainmenu.html.slim", "app/views/shared/_mainmenu.html.slim"
         template "_meta.html.slim", "app/views/shared/_meta.html.slim"
         template "_nojs.html", "app/views/shared/_nojs.html"
-        template "_outdate.html", "app/views/shared/_outdate.html"
+        template "_outdate.html.slim", "app/views/shared/_outdate.html.slim"
         remove_file 'app/helpers/application_helper.rb'
         template "application_helper.rb", "app/helpers/application_helper.rb"
         remove_file 'app/views/layouts/application.html.erb'
