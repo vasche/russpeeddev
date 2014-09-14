@@ -16,6 +16,7 @@ module Russpeeddev
 # uncomment what you need
 #-------------------------------
 gem 'russian'
+<<<<<<< HEAD
 gem 'slim-rails'
 gem 'kaminari'
 gem 'bootstrap-sass'
@@ -39,6 +40,31 @@ gem 'webrat', group: :test
 gem 'factory_girl_rails', group: :test
 gem 'quiet_assets', group: :development #hide logs
 gem 'rails_best_practices', group: :development, require: false
+=======
+gem 'slim', '~> 1.3.8'
+gem 'slim-rails', '~> 1.1.1'
+gem 'tilt', '~> 1.3.7'
+gem 'kaminari'
+gem 'bootstrap-sass'
+#gem 'thinking-sphinx'
+#gem 'delayed_job_active_record'
+#gem 'devise'
+#gem 'devise-russian', '~> 2.0.1.1'
+#gem 'activeadmin'
+#gem 'meta_search', '>= 1.1.0.pre'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'webrat'
+  gem 'factory_girl_rails'
+end
+
+group :development do
+  gem 'rspec-rails'
+  gem 'quiet_assets' #hide logs
+  #gem 'rails_best_practices'
+end
+>>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 
 #-------------------------------
 # End gem russpeeddev.
@@ -56,12 +82,21 @@ gem 'rails_best_practices', group: :development, require: false
       end
 
       def add_root_to_routes
+<<<<<<< HEAD
         insert_into_file "config/routes.rb" , after: "Rails.application.routes.draw do" do
           "\n  root 'pages#index'\n  get 'about' => 'pages#about'\n  get 'contact' => 'pages#contact'"
         end
         comment_lines 'config/routes.rb', "get 'pages/index'"
         comment_lines 'config/routes.rb', "get 'pages/about'"
         comment_lines 'config/routes.rb', "get 'pages/contact'"
+=======
+        insert_into_file "config/routes.rb" , after: "#{Rails.application.class.parent_name}::Application.routes.draw do" do
+          "\n  root 'pages#index'\n  get 'about' => 'pages#about'\n  get 'contact' => 'pages#contact'"
+        end
+        comment_lines 'config/routes.rb', 'get "pages/index"'
+        comment_lines 'config/routes.rb', 'get "pages/about"'
+        comment_lines 'config/routes.rb', 'get "pages/contact"'
+>>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
       end
 
       def create_custom_css_scss
@@ -84,6 +119,12 @@ gem 'rails_best_practices', group: :development, require: false
         template "application.html.slim", "app/views/layouts/application.html.slim"
       end
 
+<<<<<<< HEAD
+=======
+      def remove_old_version_files
+        remove_file 'app/views/shared/_outdate.html'
+      end
+>>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 
       def edit_application_rb
         insert_into_file "config/application.rb" , after: "# config.i18n.default_locale = :de" do
@@ -93,6 +134,7 @@ gem 'rails_best_practices', group: :development, require: false
           "\n    config.time_zone = 'Moscow'\n    config.active_record.default_timezone = :local\n"
         end
       end
+<<<<<<< HEAD
       #0.0.5
       def copy_slim_rb_to_initializers
         template "slim.rb", "config/initializers/slim.rb"
@@ -101,6 +143,8 @@ gem 'rails_best_practices', group: :development, require: false
         template "html5shiv.min.js", "lib/assets/html5shiv.min.js"
         template "respond.js", "lib/assets/respond.js"
       end
+=======
+>>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 
     end
   end

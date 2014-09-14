@@ -9,6 +9,7 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+<<<<<<< HEAD
 
   def year
     Time.now.year
@@ -21,4 +22,6 @@ module ApplicationHelper
   def author
     "Vasche"
   end
+=======
+>>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 end
