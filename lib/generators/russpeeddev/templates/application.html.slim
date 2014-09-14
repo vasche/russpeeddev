@@ -1,0 +1,25 @@
+doctype html
+=render 'shared/nojs'
+html
+  head
+    title = title
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    = render 'shared/meta'
+    /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      =javascript_include_tag "/assets/html5shiv.min.js", "data-turbolinks-track" => true
+      =javascript_include_tag "/assets/respond.min.js", "data-turbolinks-track" => true
+
+  body *{class: controller.controller_name}
+    =render 'shared/outdate'
+    header
+      = render 'shared/mainmenu'
+    .container
+      .page-header
+        h1 Sticky footer with fixed navbar
+      = yield
+    footer#footer.footer
+      =render 'shared/footer'
+    /!javascript include here
+    =javascript_include_tag "application", "data-turbolinks-track" => true

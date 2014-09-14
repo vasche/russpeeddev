@@ -1,0 +1,12 @@
+.header
+  header*{class:'main-header'}
+    .phone
+      p телефон
+      p
+        span.phone-num +7 (400) 700 10 30
+    .logo-container
+      h1#pageLogo
+        =link_to "logo", root_url
+    .top-menu-container
+      .tr-container
+        =render 'shared/mainmenu'

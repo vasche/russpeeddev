@@ -1,0 +1,14 @@
+.navbar.navbar-default.navbar-fixed-top@navigation
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      =link_to "RusSpeedDev", root_path, class: 'navbar-brand'
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.main-link =link_to "Главная", root_path
+        li.main-link =link_to "О нас", about_path
+        li.main-link =link_to "Контакты", contact_path
