@@ -1,5 +1,4 @@
 @import "bootstrap";
-<<<<<<< HEAD
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -39,48 +38,4 @@ body > .container {
 
 code {
   font-size: 80%;
-=======
-@import "bootstrap-responsive";
-
-
-/* Sticky footer styles
--------------------------------------------------- */
-
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
-
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -60px;
-}
-
-/* Set the fixed height of the footer here */
-#push,
-#footer {
-  height: 60px;
-}
-#footer {
-  background-color: #f5f5f5;
-}
-
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-#wrap > .container {
-  padding-top: 60px;
->>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 }

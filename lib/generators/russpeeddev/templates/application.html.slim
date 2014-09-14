@@ -3,7 +3,6 @@ doctype html
 html
   head
     title = title
-<<<<<<< HEAD
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = csrf_meta_tags
     = render 'shared/meta'
@@ -24,21 +23,3 @@ html
       =render 'shared/footer'
     /!javascript include here
     =javascript_include_tag "application", "data-turbolinks-track" => true
-=======
-    = stylesheet_link_tag    "application", media: "all"
-    = csrf_meta_tags
-    = render 'shared/meta'
-
-  body *{class: controller.controller_name}
-    =render 'shared/outdate'
-    #wrap
-      header
-        = render 'shared/mainmenu'
-      .container
-        = yield
-      #push
-    footer#footer
-      =render 'shared/footer'
-    /!javascript include here
-    =javascript_include_tag "application"
->>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f

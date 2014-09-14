@@ -2,11 +2,7 @@
 
 Генерирует куски кода для быстрого старта разработки нового приложения (russian edition).
 
-<<<<<<< HEAD
 Версия 0.0.5 для rails 4.1.6
-=======
-При создании использовался rails 4.0.0.rc1.
->>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 
 ## Что это такое?
 
@@ -23,7 +19,6 @@
 * config.time_zone = 'Moscow'
 * config.active_record.default_timezone = :local
 * config.i18n.default_locale = :ru
-<<<<<<< HEAD
 * Используется шаблон Sticky footer with fixed navbar (http://getbootstrap.com/examples/sticky-footer-navbar)
 
 ### Список гемов
@@ -36,17 +31,6 @@
 * gem 'simple_form'
 * gem 'jquery-turbolinks'
 
-=======
-* Используется шаблон Sticky footer with fixed navbar (http://twitter.github.io/bootstrap/examples/sticky-footer-navbar.html)
-
-### Список гемов
-* gem 'russian'
-* gem 'slim', '~> 1.3.8'
-* gem 'slim-rails', '~> 1.1.1'
-* gem 'tilt', '~> 1.3.7'
-* gem 'kaminari'
-* gem 'bootstrap-sass'
->>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 
 #### группа тест:
 
@@ -60,10 +44,7 @@
 * gem 'quiet_assets'
 
 #### гемы в комментариях:
-<<<<<<< HEAD
 * gem 'tilt', '~> 1.3.7'
-=======
->>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 * gem 'thinking-sphinx'
 * gem 'delayed_job_active_record'
 * gem 'devise'
@@ -88,20 +69,10 @@
 
 ## Использование
 
-<<<<<<< HEAD
 Создать новое приложение, прописать этот гем в Gemfile (выполнить bundle) , выполнить команду:
 
     $ rails g russpeeddev
 
-=======
-Создать новое приложение, установить этот гем в Gemfile (выполнить bundle) , выполнить команду:
-
-    $ rails g russpeeddev
-
-## Баги rails 4.0.0.rc1
-
-Есть проблема с зависимостями slim-rails, slim и  tilt 1.4.0. Решается запуском bundle update и повторной генерацией russpeeddev
->>>>>>> 0c68a5aa086798859fdb4a0ad6aaa137b1f20a9f
 
 
 ## Contributing
