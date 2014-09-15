@@ -57,7 +57,11 @@
 
 Добавить строку в Gemfile:
 
-    gem 'russpeeddev'
+    gem 'russpeeddev', github: 'vasche/russpeeddev', branch: 'master'
+
+или
+
+    gem 'russpeeddev', git: 'https://github.com/vasche/russpeeddev.git', branch: 'master'
 
 Затем выполнить:
 
