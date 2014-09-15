@@ -65,23 +65,23 @@ gem 'rails_best_practices', group: :development, require: false
       end
 
       def create_custom_css_scss
-        template "custom.css.scss", "app/assets/stylesheets/custom.css.scss"
+        template "custom.css.scss.temp", "app/assets/stylesheets/custom.css.scss"
         insert_into_file "app/assets/stylesheets/application.css" , before: "*/" do
           "*= require custom\n"
         end
       end
 
       def copy_shared_templates
-        template "_footer.html.slim", "app/views/shared/_footer.html.slim"
-        template "_header.html.slim", "app/views/shared/_header.html.slim"
-        template "_mainmenu.html.slim", "app/views/shared/_mainmenu.html.slim"
-        template "_meta.html.slim", "app/views/shared/_meta.html.slim"
-        template "_nojs.html", "app/views/shared/_nojs.html"
-        template "_outdate.html.slim", "app/views/shared/_outdate.html.slim"
+        template "_footer.html.slim.temp", "app/views/shared/_footer.html.slim"
+        template "_header.html.slim.temp", "app/views/shared/_header.html.slim"
+        template "_mainmenu.html.slim.temp", "app/views/shared/_mainmenu.html.slim"
+        template "_meta.html.slim.temp", "app/views/shared/_meta.html.slim"
+        template "_nojs.html.temp", "app/views/shared/_nojs.html"
+        template "_outdate.html.slim.temp", "app/views/shared/_outdate.html.slim"
         remove_file 'app/helpers/application_helper.rb'
-        template "application_helper.rb", "app/helpers/application_helper.rb"
+        template "application_helper.rb.temp", "app/helpers/application_helper.rb"
         remove_file 'app/views/layouts/application.html.erb'
-        template "application.html.slim", "app/views/layouts/application.html.slim"
+        template "application.html.slim.temp", "app/views/layouts/application.html.slim"
       end
 
 
@@ -95,11 +95,11 @@ gem 'rails_best_practices', group: :development, require: false
       end
       #0.0.5
       def copy_slim_rb_to_initializers
-        template "slim.rb", "config/initializers/slim.rb"
+        template "slim.rb.temp", "config/initializers/slim.rb"
         remove_file "app/assets/javascripts/application.js"
-        template "application.js", "app/assets/javascripts/application.js"
-        template "html5shiv.min.js", "lib/assets/html5shiv.min.js"
-        template "respond.js", "lib/assets/respond.js"
+        template "application.js.temp", "app/assets/javascripts/application.js"
+        template "html5shiv.min.js.temp", "lib/assets/html5shiv.min.js"
+        template "respond.js.temp", "lib/assets/respond.js"
       end
 
     end
