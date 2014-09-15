@@ -57,6 +57,10 @@
 
 Добавить строку в Gemfile:
 
+    gem 'russpeeddev'
+
+или установить из github
+
     gem 'russpeeddev', github: 'vasche/russpeeddev', branch: 'master'
 
 или
@@ -73,7 +77,7 @@
 
 ## Использование
 
-Создать новое приложение, прописать этот гем в Gemfile (выполнить bundle) , выполнить команду:
+Создать новое приложение, прописать этот гем в Gemfile (выполнить bundle install) , выполнить команду:
 
     $ rails g russpeeddev
 
